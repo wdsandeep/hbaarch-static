@@ -1,0 +1,198 @@
+ .slider-single {
+                margin:0 0 30px 0;
+            }
+            .slider-single * {
+                box-sizing: border-box;
+            }
+            .slider-single ul,
+            .slider-single ul li.slide {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .slider-single ul li.slide {
+                position:relative;
+                width: 100%;
+            }
+            .slider-single ul li.slide span {
+                position:absolute;
+                top:0;
+            }
+            .slider-single ul li.slide img {
+               /* border: 1px solid #000;*/
+                display: block;
+                width: 100%;
+            }
+            /* accessibly hide the text content */
+            .slider-single ul li.slide h4,
+            .slider-single ul li.slide p {
+                left: -9000px;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+                position:absolute;
+                top: -9000px
+            }
+
+            /* background images */
+            .slider-single ul.background-images li {
+                height: 420px;
+                background: no-repeat 50%;
+                background-size: cover;
+            }
+
+            /* titles */
+            .slider-single .titles {
+                position: relative;
+                height: 100px;
+                z-index: 100;
+            }
+            .slider-single .titles:after {
+                background: #b7b4b2;
+                bottom: -3px;
+                content: "";
+                height: 6px;
+                left: 38%;
+                position: absolute;
+                width: 24%;
+            }
+            .slider-single .titles li {
+                height: 100%;
+                float: left;
+                font-size: 25px;
+                position: relative;
+                padding-top: 1.5em;
+                text-align: center;
+                width: 38%;
+                z-index: 100;
+            }
+            .slider-single .titles li h4 {
+                color: #fff;
+                font-weight: normal;
+                margin: 0;
+				font-size: 25px; 
+				text-align: center; 
+				
+            }
+            .slider-single .titles li.current {
+                padding-top: 0.8em;
+                width: 24%;
+            }
+            .slider-single .titles li:not(.current) {
+                cursor: pointer;
+            }
+            .slider-single .titles li.current h4 {
+                color: #b7b4b2;
+				
+            }
+            .slider-single .titles li.current p {
+                color: #988e8b;
+                font-size: 15px;
+                margin:10px 0 0 0;
+            }
+
+            /* pagination */
+            .slider-single .pagination {
+                background: url(../../images/stroke.png) no-repeat 50%;
+                height: 53px;
+                margin: -26px auto 0 auto;
+                position: relative;
+                width: 106px;
+                z-index: 100;
+				     display: block; 
+            }
+            .slider-single .pagination a {
+                background: no-repeat 50%;
+                position: absolute;
+                height: 16px;
+                overflow: hidden;
+                text-indent: -999px;
+                top: 16px;
+                width: 10px;
+            }
+            .slider-single .pagination a.next {
+               /* background-image: url(../../images/arrow-next.png);*/
+                right:0;
+            }
+            .slider-single .pagination a.prev {
+                /*background-image: url(../../images/arrow-prev.png);*/
+                left:0;
+				
+            }
+            .slider-single .pagination .counter {
+                display: block;
+                overflow: hidden;
+                text-indent: -999px;
+            }
+            .slider-single .pagination .counter em {
+                color: #fff;
+                font-size: 28px;
+                font-style: italic;
+                line-height: 1em;
+                position: absolute;
+                text-indent: 0;
+            }
+            .slider-single .pagination .counter .current {
+                left: 31px !important;
+                top: 0px;
+				font-family: BauerBodoniStd-Roman;
+				font-size: 30px;
+				font-style:italic;
+            }
+            .slider-single .pagination .counter .total {
+                right: 31px;
+                bottom: 0px;
+				font-family: BauerBodoniStd-Roman;
+				font-size: 30px;
+				font-style:italic;
+            }
+/*pagination project*/
+ .pagination {
+                background: url(../../images/stroke.png) no-repeat 50%;
+                height: 53px;
+                margin: -26px auto 0 auto;
+                position: relative;
+                width: 106px;
+                z-index: 100;
+				     display: block; 
+            }
+             .pagination a {
+                background: no-repeat 50%;
+                position: absolute;
+                height: 16px;
+                overflow: hidden;
+                text-indent: -999px;
+                top: 16px;
+                width: 10px;
+            }
+            .pagination a.next {
+               /* background-image: url(../../images/arrow-next.png);*/
+                right:0;
+            }
+            .pagination a.prev {
+                /*background-image: url(../../images/arrow-prev.png);*/
+                left:0;
+            }
+            .pagination .counter {
+                display: block;
+                overflow: hidden;
+                text-indent: -999px;
+            }
+             .pagination .counter em {
+                color: #6a6865;
+                font-size: 28px;
+                font-style: italic;
+                line-height: 1em;
+                position: absolute;
+                text-indent: 0;
+            }
+            .pagination .counter .current {
+                left: 15px !important;
+    top: 15px;
+            }
+             .pagination .counter .total {
+                   right: 15px;
+                   bottom: 15px;
+            }
+
+/*pagination*/
